@@ -1,2 +1,2 @@
 # SEAR
-Official code for the SEAR benchmark
+Official code for the SEAR benchmark. To be released soon...
