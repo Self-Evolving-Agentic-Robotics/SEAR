@@ -32,7 +32,7 @@
 > **The code is on its way.** Watch or star the repo to get notified when it lands.
 
 <p align="center">
-  <img src="assets/teaser.jpg" alt="SEAR learning loop, validation curves, and real-robot self-evolution sequences" width="100%">
+  <img src="assets/teaser.jpg" alt="SEAR self-evolving loop and harness, with real-robot self-evolution sequences, whiteboard writing, and a dexterous hand" width="100%">
 </p>
 
 ## Overview
