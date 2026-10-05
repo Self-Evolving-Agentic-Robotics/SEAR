@@ -8,7 +8,7 @@
 [Bangzheng Li](https://www.libangzheng.com/)<sup>\*,†</sup> ·
 [Hanyu Wang](https://hywang66.github.io/)<sup>‡</sup> ·
 [Lin Zhang](https://lzhangbj.github.io/) ·
-[Andrea Yaoyun Cui](https://www.linkedin.com/in/y-cui) ·
+[Andrea Yaoyun Cui](https://andreayyc.github.io/) ·
 [Zhenggang Tang](https://recordmp3.github.io/) ·
 [Shyamal Buch](https://cs.stanford.edu/~shyamal/)<sup>§</sup> ·
 [Dejia Xu](https://ir1d.github.io/)<sup>†,§</sup>
