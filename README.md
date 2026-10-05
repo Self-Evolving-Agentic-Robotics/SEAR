@@ -13,13 +13,13 @@
 [Shyamal Buch](https://cs.stanford.edu/~shyamal/)<sup>§</sup> ·
 [Dejia Xu](https://ir1d.github.io/)<sup>†,§</sup>
 
-**Luma AI, OPAL project**
+**Luma AI**
 
 <sub><sup>\*</sup> Co-first authors &nbsp;·&nbsp; <sup>†</sup> Project leads &nbsp;·&nbsp; <sup>‡</sup> Real robot lead &nbsp;·&nbsp; <sup>§</sup> Co-last authors</sub>
 
 <br>
 
-[![Website](https://img.shields.io/badge/Website-sear--webpage-1f1d1a?style=for-the-badge)](https://sear-webpage.vercel.app/)
+[![Website](https://img.shields.io/badge/Website-sear.bot-1f1d1a?style=for-the-badge)](https://sear.bot/)
 [![Paper](https://img.shields.io/badge/Paper-coming%20soon-b31b1b?style=for-the-badge)](#release-plan)
 [![Code](https://img.shields.io/badge/Code-coming%20soon-lightgrey?style=for-the-badge)](#release-plan)
 [![License](https://img.shields.io/badge/License-MIT-2f6f4e?style=for-the-badge)](LICENSE)
