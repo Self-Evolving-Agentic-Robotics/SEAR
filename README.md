@@ -85,7 +85,8 @@ A rising success rate does not mean the agent is learning. SEAR pairs each alter
 
 ## Release plan
 
-- [x] Paper and project website
+- [x] Project website
+- [ ] Paper
 - [ ] Code release
 
 ## Citation
