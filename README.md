@@ -37,7 +37,7 @@
 
 ## Overview
 
-Frontier language agents can now improve a robot from its own experience: they write control code, maintain skills and memories, and train action models on their own rollouts. But when an agent's success rises with more interaction, where does the gain come from, and how far does it reach?
+Frontier language-model agents can now control a robot and improve by interacting with the environment: they write control code, maintain skills and memories, and even train action models on rollouts they collect themselves. When such an agent's success rises with more interaction, how much of the gain comes from retained experience, rather than from resampling or a longer session? And does that experience generalize to held-out tasks and conditions?
 
 **SEAR** is a framework and benchmark for answering these questions. Its harness connects a language agent with perception and control tools and a persistent library of skills and memories, and runs the same way on simulated and physical robots. The agent can deliver its policy in three forms:
 
@@ -47,7 +47,7 @@ Frontier language agents can now improve a robot from its own experience: they w
 
 <div align="center">
 
-| 1.9 years | 5 | 330 | 2 | 5 |
+| 4+ years | 5 | 330 | 2 | 5 |
 | :-: | :-: | :-: | :-: | :-: |
 | of agent runtime | frontier models | simulated tasks | physics engines | physical tasks |
 
@@ -79,9 +79,10 @@ A rising success rate does not mean the agent is learning. SEAR pairs each alter
 
 ## Key findings
 
-1. **Base-model capability sets the floor and the ceiling.** A model that rarely writes a working policy has nothing to save. Above that floor, the five models rank in the same order under every protocol, and the gap between best and worst grows with task difficulty, from 12 points to 43. Vision is not what separates them: the one text-only model, given segmentation and depth tools, beats the nearest multimodal model on the hardest family.
-2. **Longer sessions and inherited experience both help, but only inherited experience transfers.** An inherited library moves first success earlier and adds 7 to 18 points to weaker models on the practiced task. It is the only source of gain that survives a change of task or simulator, and what transfers is control code and shared routines, not perception code or task-specific solutions.
-3. **The library carries mistakes forward along with skills.** Identically configured lineages diverge by more than the gap between models. On hardware, ten consecutive practice successes do not predict held-out success, and the best model depends on the policy form: the model that dominates in code-as-policy does worse in agent-as-policy.
+1. **The base model sets a floor, and above it the library can reorder models.** A model that rarely writes a working policy has nothing to save: one Inkling-small lineage went 29 tasks in a row without a valid policy. Above that floor, Opus leads every family, but Kimi-k3 overtakes GPT-5.6-sol with a library on three of five. Multimodality is not required: the text-only DeepSeek-v4-flash, given segmentation and depth tools, beats the multimodal Gemini-3.6-flash on RoboLab.
+2. **A longer session and an inherited library can each raise performance, but not always.** One long session beats several short ones at the same budget only when a short attempt would end before the model's first success. What the library does depends on what it holds: on RoboLab it raises Opus from 61.9% to 68.0% and Kimi-k3 from 30.1% to 51.9%, but lowers GPT-5.6-sol from 46.9% to 42.4%. Given Opus's library instead, GPT-5.6-sol scores 60.6%.
+3. **Experience transfers in part, and the policy form decides which changes it survives.** Control and grasp routines carry across tasks and simulators; task-specific solutions do not. A code policy corrects hardware faults that leave the camera in place but fails when the camera moves, while a VLA trained on its rollouts handles the moved camera. On a real robot, ten practice successes in a row do not predict success on operator-staged scenes.
+4. **The loop keeps its mistakes, and agents take shortcuts.** Nothing requires a lesson to be re-checked once it is written down: one agent saved a wrong reading from its own measurement tool as fact, and every later task inherited it, so identically configured lineages diverge. Agents also take shortcuts the benchmark did not intend, such as reading task files that reveal the instruction.
 
 ## Release plan
 
