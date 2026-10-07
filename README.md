@@ -13,8 +13,6 @@
 [Shyamal Buch](https://cs.stanford.edu/~shyamal/)<sup>§</sup> ·
 [Dejia Xu](https://ir1d.github.io/)<sup>†,§</sup>
 
-**Luma AI**
-
 <sub><sup>\*</sup> Co-first authors &nbsp;·&nbsp; <sup>†</sup> Project leads &nbsp;·&nbsp; <sup>‡</sup> Real robot lead &nbsp;·&nbsp; <sup>§</sup> Co-last authors</sub>
 
 <br>
